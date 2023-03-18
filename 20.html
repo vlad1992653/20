@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	
+<html>
+	<head>
+        <meta charset="UTF-8"/>
+
+
+	</head>
+	<body>
+	
+	<script  type="text/javascript">
+
+console.log ("__________1_________")
+function getaColumn (min, max) {
+for (let i = min; i <= max; i++) {
+console.log (i)
+}
+console.log ("__________2__________")
+for (let i = max; i >= min; i--) {
+console.log (i)
+}
+console.log ("__________3__________")
+for (let i = min; i <= max; i++) {
+if (i % 2 == 0) {
+console.log (i)
+}
+}
+}
+getaColumn (1,100)
+
+
+
+console.log ("__________4__________")
+let r = []
+function masr (min, max) {
+
+for (let i = min; i <= max; i++) {
+r[i] = "X"
+console.log (r[i])
+}
+}
+masr (0,9)
+console.log (r)
+
+let b = []
+console.log ("__________5__________")
+function masb (min, max) {
+
+for (let i = min; i <= max; i++) {
+b[i-1] = i
+console.log (b[i-1])
+}
+}
+masb (1,10)
+console.log (b)
+
+console.log ("__________6__________")
+let massiv = []
+for (let i = 0; i <= 10; i++) {
+ massiv.push ( Math.random().toFixed(2))
+}
+console.log(massiv) 
+
+
+
+console.log ("__________7__________")
+let ma = []
+function masrand (min, max) {
+for (let i = 1; i <= 10; i++) {
+ console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+}
+
+}
+masrand (1, 10)
+
+console.log ("__________8__________")
+
+let q = [1,-2,3,14,5,-6,-7,8,90,10] 
+
+for (let i = 1; i <= 10; i++) {
+if (q[i] >0 && q[i] < 10)
+{
+console.log (q[i])
+}
+}
+
+console.log ("__________9__________")
+let arr = [1, 2, 3, 4, 5, 6, 7];
+	for (let elem of arr) {
+	console.log(elem);
+	if (elem == 5) {
+	console.log('есть');
+	break; 
+	}
+	}
+	
+	console.log ("__________10__________")
+	let arr2 = [1, 2, 3, 4, 5, 6, 7];
+	let sum = 0
+	for (let elem of arr2) {
+	sum += elem
+	}
+	console.log(sum);
+
+
+console.log ("__________11__________")
+	let arr3 = [1, 2, 3, 4, 5, 6, 7];
+	let sum2 = 0
+	for (let elem of arr3) {
+	sum2 += elem**2
+	}
+	console.log(sum2);
+	
+	console.log ("__________12__________")
+	let arr4 = [1, 2, 3, 4, 5, 6, 7];
+	let sum3 = 0
+	for (let elem of arr4) {
+	sum3 += elem
+	}
+	console.log(sum3/arr4.length);
+	</script>
+
+	</body>
+</html>
